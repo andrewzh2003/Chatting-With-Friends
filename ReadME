@@ -1,0 +1,29 @@
+HelLo, this is documentation of our project
+
+notes: there is no flourish as I am already submiting this assignment late
+
+A5:
+The main file to run will be the a5 python file, as it will create a goey to display the 
+messages between users.
+You start up the file and you will either create a new file or load up a previously created DSU file
+tat will store messages sent and recieved by other users. The program also automatically recieves new messages
+sent every 5 seconds by the updateMessage function in teh MainAPP class in the a5 file. 
+You can also send messages to users you already have contact with or send new messages to a new user
+with the setting 'add contact'
+You write the messages you want to send in the bottom right text box and press save post to send it
+
+Profile:
+lots of changes were made to the profile class, and in all honestly most of the changes made the code 
+more confusing
+
+We tried to create a better system to messages, as we needed to rebuild whole conversations. So we added
+sender and reciepent tags in Post objects, allowing us to create a dictionary, storing every
+conversation with every other user that our user had contact with. 
+We also made a new class called MessageHandler in the profile module, that took in the large list of json
+direct messages the user recieved, and grouped them together by sender. This allowed us to abstract away
+the data recieved from the server.
+
+DS_messenger:
+Follows the requirements, has the send function and the class of direct messages, that we didnt use, we 
+probably shouldve.
+
